@@ -4,8 +4,11 @@
 import Link from "next/link";
 
 const links = [
+  //para añadir nuevas secciones al dashboard, como breadcrumb pero para páginas
   { name: "accordion", href: "accordion" },
   { name: "alert", href: "alert" },
+  {name : "button", href: "button"}, 
+
 ];
 
 export default function DashboardLayout({

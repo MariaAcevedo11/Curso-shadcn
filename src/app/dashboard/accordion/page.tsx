@@ -28,17 +28,20 @@ export default function Page() {
     <div>
       <Accordion
       type="single" 
-      /*Para cambiar si
+      /*Para cambiar si 
       se abren varios o solo uno reemplazar multiple por single and if single then add collapsible after "single" */
       className="w-full"
       defaultValue="item-1"
+      
     >
+
+      <p>Iterando sobre los items por clave valor</p>
       {
         items.map( item => (
 
       <AccordionItem value={ item.id } key = { item.id }>
         <AccordionTrigger>{ item.question }</AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
+        <AccordionContent className="flex flex-col gap-4 text-balance"> 
           { item.answer }
         </AccordionContent>
       </AccordionItem>
