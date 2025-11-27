@@ -1,6 +1,7 @@
 // https://tailwindcomponents.com/component/tailwind-css-admin-dashboard-layout
 // https://gist.github.com/Klerith/3949f1c8b884d7101e378dfb668f0f3a
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 
 const links = [
@@ -12,6 +13,8 @@ const links = [
   { name: "dialog", href : "dialog"}, 
   { name: "badge", href : "badge"}, 
   { name: "calendar", href : "calendar"}, 
+  { name: "avatar", href : "avatar"}, 
+  
 
 ].sort((a,b) => a.name.localeCompare(b.name));
 
@@ -65,6 +68,7 @@ export default function DashboardLayout({
               >
                 {/* Logo */}
                 <svg
+                
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 256 256"
                   className="h-6 w-6"
@@ -101,9 +105,10 @@ export default function DashboardLayout({
             </div>
             <div className="flex items-center">
               {/* User Avatar */}
-              <div className="bg-blue-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center">
-                FH
-              </div>
+               <Avatar className = "flex justify-center items-center">
+            <AvatarImage src = "https://th.bing.com/th/id/R.9f1b21faeb6b6596004f31d92cd4bbd8?rik=sKXlYft%2f5r0gHg&riu=http%3a%2f%2fimages2.fanpop.com%2fimages%2fphotos%2f8400000%2fHannah-Montana-Season-1-Promotional-Photos-HQ-3-hannah-montana-8435551-1365-2048.jpg&ehk=83iajJNvxOysqzLcAdBpzMYhpPeIXgkZB6Ov6jJvYR8%3d&risl=&pid=ImgRaw&r=0"></AvatarImage>
+            <AvatarFallback>404</AvatarFallback>     
+          </Avatar>
             </div>
           </div>
         </div>
