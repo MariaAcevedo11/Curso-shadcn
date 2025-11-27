@@ -21,14 +21,17 @@ export default function Page() {
     //setDialogOpen es la función para cambiarle el valor a dialogOpen
     //EJ: setDialogOpen(true)
     
-  const [dialogOpen, setDialogOpen] = useState(false)
+  const [dialogOpen, setDialogOpen] = useState(false) //global en el componente
+  console.log("dialogOpen", dialogOpen)
+  
   return (
     <div className = "grid grid-cols-2 gap-4">
-     <AlertDialog 
-     open = {dialogOpen}
+    
+    <AlertDialog 
+      open = {dialogOpen}
      // onOpenChange={ (open) => console.log({ open })}>
-     onOpenChange={ setDialogOpen }>
-
+      onOpenChange={ setDialogOpen }>
+      
       <AlertDialogTrigger asChild>
       <Button variant="lolipop">Show Dialog</Button>
       </AlertDialogTrigger>
