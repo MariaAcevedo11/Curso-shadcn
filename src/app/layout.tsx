@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils"
-
+import {Toaster as SonnerToaster} from "@/components/ui/sonner"; 
 
 const fontSans = FontSans({
   subsets : ["latin"],
@@ -28,6 +28,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <SonnerToaster richColors/> {/*RichColor para que se vean los colores sobrescribidos en el page */}
       </body>
     </html>
   );
