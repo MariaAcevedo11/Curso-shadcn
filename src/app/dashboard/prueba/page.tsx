@@ -5,11 +5,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { MenubarTrigger, Menubar, MenubarMenu, MenubarContent, MenubarItem, MenubarSeparator, MenubarSubContent, MenubarSub, MenubarSubTrigger } from "@/components/ui/menubar";
 
-export default function prueba() {
 
-
+const prueba = () => {
   return (
-    
     <div>
 
       {/* Menubar */}
@@ -136,5 +134,7 @@ export default function prueba() {
 
     </div>
 
-  );
+  )
 }
+
+export default prueba
