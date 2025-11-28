@@ -20,7 +20,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         getCrazyBro : "bg-blue-800 text-blue-800-foreground shadow-sm hover:bg-blue-800",
-        lolipop : "bg-pink-300 text-pink-300-foreground shadow-sm hover:bg-pink-300",
+        lolipop : "bg-pink-300 text-pink-300-foreground shadow-sm hover:bg-pink-100",
       },
       size: {
         default: "h-9 px-4 py-2",
