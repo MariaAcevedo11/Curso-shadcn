@@ -1,4 +1,4 @@
-'use client'; 
+'use client'
 
 import {
   ContextMenu,
@@ -15,7 +15,7 @@ import {
   ContextMenuSubTrigger,
   ContextMenuTrigger,
 } from "@/components/ui/context-menu"
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation"; //jiji es navigation
 
 
 export default function Page() {
