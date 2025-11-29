@@ -7,7 +7,7 @@ const config: Config = {
 
 export type Payment = {
   id: string;
-  amount: number;
+  amount: number; //Lo mejor es mantener la data más pura posible, lo más parecido al tipo de dato del mundo real
   status: "pending" | "processing" | "success" | "failed";
   email: string;
   clientName: string;
